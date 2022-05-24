@@ -18,3 +18,10 @@ The Callback Queue justL:
 1. Holds the results (as callbacks) of the Web API operations in a Queue.
 2. Waits for the JS Engine's Call Stack to be empty.
 3. Adds the results to the Call Stack in order.
+
+## Reference
+
+There's this cool tool that helps you to visualize the JS Runtime schema called Loupe:
+
+- http://latentflip.com/loupe/
+- Built by [@philip_roberts](https://twitter.com/philip_roberts) emulates the JS Runtime flow for any given chunk of code. You can also emulate page renders and how this interacts with the browser.
