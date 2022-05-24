@@ -6,6 +6,10 @@ All you need to know for your next gig.
 
 1. [The ECMAScript Engine](./javascript/the-ecmascript-engine.md)
 2. [The Call Stack and Memory Heap](./javascript/the-call-stack-and-memory-heap.md)
+3. [Javascript runtime](./javascript/javascript-runtime.md)
+
+- [The Web API](./javascript/the-web-api.md)
+- [The Callback Queue](./javascript/the-callback-queue.md)
 
 ## II. Web fundamentals.
 
