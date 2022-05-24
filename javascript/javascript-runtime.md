@@ -25,3 +25,4 @@ There's this cool tool that helps you to visualize the JS Runtime schema called 
 
 - http://latentflip.com/loupe/
 - Built by [@philip_roberts](https://twitter.com/philip_roberts) emulates the JS Runtime flow for any given chunk of code. You can also emulate page renders and how this interacts with the browser.
+- Philip Roberts has this awesome talk titled [WTH is the JS Runtime anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=5s) which's worth a watch.
