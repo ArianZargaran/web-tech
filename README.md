@@ -11,9 +11,16 @@ All you need to know for your next gig.
 - [The Web API](./javascript/the-web-api.md)
 - [The Callback Queue](./javascript/the-callback-queue.md)
 
+4. [Node](./javascript/node.md)
+
 ## II. Web fundamentals.
 
 1. [How does the Internet work?](./web-fundamentals/how-does-the-internet-work.md)
+
+- [Web protocols](./web-fundamentals/web-protocols.md)
+
+- [The server](./web-fundamentals/the-server.md)
+
 2. [The web flow diagram](./web-fundamentals/web-diagram.md)
 
 ## III. Whiteboarding.

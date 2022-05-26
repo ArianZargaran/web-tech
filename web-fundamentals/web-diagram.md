@@ -1,5 +1,7 @@
 # The web connections flow diagram
 
+![The Internet diagram](../resources/web-diagram.png)
+
 ## Steps to render a page into a web browser: The initial GET request.
 
 0. The user opens the browser and enters a link on the URL input bar.
