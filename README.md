@@ -22,6 +22,8 @@ All you need to know for your next gig.
 - [The server](./web-fundamentals/the-server.md)
 
 2. [The web flow diagram](./web-fundamentals/web-diagram.md)
+3. [The email flow diagram](./web-fundamentals/email-diagram.md)
+4. [Network basics]
 
 ## III. Whiteboarding.
 

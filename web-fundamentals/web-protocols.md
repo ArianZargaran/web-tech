@@ -9,3 +9,5 @@
 **HTTPS** (Hypertext Transfer Protocol Secure) The data packages are not encrypted with the HTTP protocol. HTTPS is a more secure protocol that encrypts these data packets using SSL (Secure Socket Layer) or TLS (Transport Security Layer).
 
 - **SSL** (Secure Socket Layer) The data packets are encrypted with the HTTPS protocol. In order to decrypt the packages, the server needs to have a Security Certificate installed on it.
+
+- **SMTP** (Simple Mail Transfer Protocol) The protocol that allows the sending of emails.
