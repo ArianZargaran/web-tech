@@ -23,7 +23,7 @@ All you need to know for your next gig.
 
 2. [The web flow diagram](./web-fundamentals/web-diagram.md)
 3. [The email flow diagram](./web-fundamentals/email-diagram.md)
-4. [Network basics]
+4. [Network basics](./web-fundamentals/network-basics.md)
 
 ## III. Whiteboarding.
 
