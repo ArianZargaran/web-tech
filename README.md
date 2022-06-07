@@ -4,6 +4,8 @@ All you need to know for your next gig.
 
 ## I. Javascript. The language for The Web.
 
+### Javascript Foundation I
+
 1. [The ECMAScript Engine](./javascript/the-ecmascript-engine.md)
 2. [The Call Stack and Memory Heap](./javascript/the-call-stack-and-memory-heap.md)
 3. [Javascript runtime](./javascript/javascript-runtime.md)
@@ -12,6 +14,10 @@ All you need to know for your next gig.
 - [The Callback Queue](./javascript/the-callback-queue.md)
 
 4. [Node](./javascript/node.md)
+
+### Javascript Foundation II
+
+1. [Execution Context & Lexical Environment](./javascript/execution-context.md)
 
 ## II. Web fundamentals.
 
