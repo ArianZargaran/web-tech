@@ -1,10 +1,12 @@
 /**
  * 1. Create Node
  * 2. Create Linked List with the following methods:
- * * Insert
- * * Delete
- * * Access
- * * Search
+ * - Insert
+ * - Delete
+ * - Access
+ *  + Access an element given its position
+ * - Search
+ *  + Access an element given its value
 */
 
 class Node {
@@ -59,8 +61,26 @@ class LinkedList {
   }
 
   delete(index) {
-    const current = this.head;
+    /**
+     * Edge cases;
+     * Si el head es null
+     *  - return false O throw exception
+     * 
+     * Si el index es superior al length del linked list
+     *  - return false O throw exception 
+     */
+    if(this.head === null) {
+      // throw new Error("Error!! we weren't able to ")
+      return false;
+    }
 
+    // When we want to remove the first element on the LL.
+    if(index === 0) {
+      this.head = this.head.next;
+    }
+    
+    const current = this.head;
+    
     while(current.next !== null) {
       if(index === 1) {
         current.next = current.next.next;
@@ -71,6 +91,49 @@ class LinkedList {
       current = current.next;
     }
 
+    return false;
+  }
+
+  // return the node OR the value of that node;
+  access(index) {
+    // When the LL is empty; throw an error or return false;
+    if(this.head === null) {
+      return false;
+    }
+    // Base case: When the index is somewhere in between the LL
+    const current = this.head;
+    
+    while(current !== null) {
+      if(index === 0) {
+        return current;
+      }
+      
+      current = current.next;
+      index--;
+    }
+
+    // When the given index > LL.length
+    return false;
+  }
+
+  // return the node OR true if exists;
+  search(value) {
+    // When the LL is empty; throw an error or return false;
+    if(this.head === null) {
+      return false;
+    }
+    // Base case: When the value is somewhere in between the LL
+    const current = this.head;
+    
+    while(current !== null) {
+      if(current.value === value) {
+        return true;
+      }
+      
+      current = current.next;
+    }
+
+    // When the given index > LL.length
     return false;
   }
 
