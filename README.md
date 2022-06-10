@@ -18,6 +18,7 @@ All you need to know for your next gig.
 ### Javascript Foundation II
 
 1. [Execution Context & Lexical Environment](./javascript/execution-context.md)
+2. [Hoisting](./javascript/hoisting.md)
 
 ## II. Web fundamentals.
 

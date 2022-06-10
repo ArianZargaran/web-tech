@@ -138,12 +138,18 @@ class LinkedList {
   }
 
   #addToTail(val) {
+    const node = new Node(val);
+
+    // Edge cases: this.head === null;
+    if(this.head === null) {
+      this.head = node;
+    }
+
     const current = this.head;
     while(current.next !== null) {
       current = current.next;
     }
 
-    const node = new Node(val);
     current.next = node;
 
     return true;
