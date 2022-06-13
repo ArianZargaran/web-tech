@@ -4,7 +4,9 @@
  * * First, track what cols and rows should be converted to Zeros.
  * row = [false, true, true];
  * col = [true, false, false, false];
- * * Second, transform every element that shares the rows' or cols' initially stored in the rows & cols trackers 
+ * * Second, transform every element that shares the rows' or cols' initially stored in the rows & cols trackers
+ * 
+ * Another way to implement it would be, [this one](./73-set-matrix-zeros2.js)
  */
 
 var setZeroes = function(matrix) {

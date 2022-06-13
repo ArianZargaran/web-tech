@@ -1,12 +1,12 @@
 /**
 /* Input: Given two strings and an isSubstring helper method.
-/* Algoritmo: metodo substring que chequea si una palabra es substring de otra.
-/* Output: Booleano
-/* Ejemplo: "waterbottle", "bottlewater" -> true
-/* Ejemplo: "waterbottle", "terbottlewa" -> true
-/* Ejemplo: "waterbottle", "terbotlewat" -> false
-/* Ejemplo: "camaleon", "oncamale" -> true
-/* Ejemplo: "camaleon", "ncamaleo" -> true
+/* Routine: A given substring method checks if a word is a substring of the other.
+/* Output: Boolean
+/* Example: "waterbottle", "bottlewater" -> true
+/* Example: "waterbottle", "terbottlewa" -> true
+/* Example: "waterbottle", "terbotlewat" -> false
+/* Example: "camaleon", "oncamale" -> true
+/* Example: "camaleon", "ncamaleo" -> true
 **/
 
 /**

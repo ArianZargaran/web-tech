@@ -22,6 +22,8 @@ All you need to know for your next gig.
 
 ## II. Web fundamentals.
 
+### How does the Internet work?
+
 1. [How does the Internet work?](./web-fundamentals/how-does-the-internet-work.md)
 
 - [Web protocols](./web-fundamentals/web-protocols.md)
@@ -33,6 +35,23 @@ All you need to know for your next gig.
 4. [Network basics](./web-fundamentals/network-basics.md)
 5. [Network ports](./web-fundamentals/network-ports.md)
 
+### The Web Development Process
+
+1. Plan and create a Flow Diagram of the Web App.
+2. Determine your System Requirements & Hosting Solution.
+3. Register a Domain Name.
+4. Setup a Local Testing Server.
+5. Configure a Production Server.
+6. Install and Setup the FTP Service.
+7. Develop the Front-End of the Web Application.
+8. Setup/Config the database with SQL.
+9. Interact with your database with your Back-End.
+10. Upload the website using an FTP Service.
+11. Configure the DNS Records Config, so that the website domain translates into the website IP address.
+12. Configure and Setup the email & SMTP Service to have a custom email address under your domain.
+
 ## III. Whiteboarding.
 
 1. [Time and space complexity](./whiteboarding/time-and-space-complexity.md)
+2. [Algorithms](./whiteboarding/algorithms.md)
+3. [Data structures](./whiteboarding/data-structures.md)
