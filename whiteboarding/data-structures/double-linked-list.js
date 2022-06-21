@@ -11,7 +11,6 @@
 
 class Node {
   constructor(val, left = null, right = null) {
-    super();
     this.val = val;
     this.right = right;
     this.left = left;
@@ -23,78 +22,119 @@ class Node {
  */
 class DoubleLinkedList {
   constructor() {
-    super();
     this.head = null;
   }
 
   insert(index, val) {
     /**
-     * Base case: If head is null, replace head by the new node;
-     */ 
+     * La LL está vacía
+     * -- Actualizamos el head y le añadimos el nuevo nodo  ✅
+     * 
+     * El index === 0
+     * -- el nuevo nodo apunta con el right pointer al post (ex-this.head)  ✅
+     * -- ex-this.head apunta al nuevo nodo con su left pointer
+     * -- this.head pasa a ser el nuevo nodo.
+     * 
+     * Base: El index está entre el primer nodo (no null) y el ultimo nodo (que no es null)  ✅
+     * -- recorrer el LL
+     * -- tomar el nodo prev y apuntar al nuevo nodo con el right pointer
+     * -- crear un nodo nuevo con el valor que recibimos apuntando a right (prev) y left (post) 
+     * -- ir al post y apuntar al nuevo nodo con el left pointer
+     * 
+     * El index coincide con el ultimo nodo + 1  ✅
+     * -- Accedemos al ultimo nodo de la LL y apuntamos con el right pointer al nuevo nodo
+     * -- el nuevo nodo apunta con el left pointer al antiguo ultimo nodo
+     * 
+     * Si el indice es superior al LL.length  ✅
+     * -- devolver false;
+     */
+    let node = new Node(val);
+
     if(this.head === null) {
-      this.head = new Node(val);
+      this.head = node;
+      return true;
+    }
+  
+    let current = this.head;
+
+    if(index === 0) {
+      node.right = current;
+      current.left = node;
+      this.head = node;
       return true;
     }
 
-    /**
-     * Regular insert: 
-     * Traverse the LL to the index - 1.
-     * Stablish the next node of the prev element to the coming node
-     * If there is a next node: access the coming node and set its next to the old one
-     */
-    const current = this.head;
-    while(current !== null) {
-      /**
-       * Regular case: 
-       * We access the prev el and insert a new node to the right index;
-       */
+    while(current.right !== null) {
       if(index === 1) {
-        const node = new Node(val, current.next);
-        current.next = node;
+        let post = current.right.right;
+        current.right = node;
+        if(post !== null) {
+          post.left = node;
+        }
+        node.left = current;
+        node.right = post;
+
         return true;
       }
 
       index--;
-      current = current.next;
+      current = current.right;
     }
-
-    return this.#addToTail(val);
+    
+    if(index === 1) {
+      current.right = node;
+      node.left = current;
+      return true;
+    }
+    
+    return false;
   }
 
   delete(index) {
     /**
-     * Si el head es null
-     *  - return false O throw exception
-     * Si el head NO es null
-     * -- Si eliminamos el primer nodo
+     * Si el head es null ✅
+     *  - return false O throw exception ✅
+     * Si el head NO es null ✅
+     * -- Si eliminamos el primer nodo ✅
+     * -- Si vaciamos la LL ✅
      * 
-     * -- Si eliminamos el ultimo nodo
+     * -- Base case: Si el index está entre el primer nodo y el ultimo  ✅
      * 
-     * -- Si vaciamos la LL
-     * 
+     * -- Si eliminamos el ultimo nodo ✅
+     *
      * -- Si el index es superior al length del linked list
-     *  - return false O throw exception 
+     *  - return false O throw exception ✅
      */
-    if(this.head === null) {
-      // throw new Error("Error!! we weren't able to ")
+    if (this.head === null) {
       return false;
     }
 
-    // When we want to remove the first element on the LL.
+    let current = this.head;
+
     if(index === 0) {
-      this.head = this.head.next;
+      if(current.right === null) {
+        this.head = null;
+        return true;
+      }
+      current.right.left = null;
+      this.head = current.right;
     }
-    
-    const current = this.head;
-    
-    while(current.next !== null) {
+
+    while(current.right !== null) {
+      let post = current.right.right;
+
       if(index === 1) {
-        current.next = current.next.next;
+        current.right = post;
+        if(post === null) {
+          return true;
+        }
+
+        post.left = current;
         return true;
       }
 
+      current = current.right;
       index--;
-      current = current.next;
     }
 
     return false;
@@ -102,7 +142,7 @@ class DoubleLinkedList {
 
   // return the node OR the value of that node;
   access(index) {
-    const current = this.head;
+    let current = this.head;
     
     while(current !== null) {
       if(index === 0) {
@@ -120,7 +160,7 @@ class DoubleLinkedList {
   // return the node OR true if exists;
   search(value) {
     // Base case: When the value is somewhere in between the LL
-    const current = this.head;
+    let current = this.head;
     
     while(current !== null) {
       if(current.value === value) {
@@ -133,32 +173,19 @@ class DoubleLinkedList {
     // When the given index > LL.length
     return false;
   }
-
-  #addToTail(val) {
-    /**
-     * If this.head === null;
-     * -- this.head = node;
-     *
-     * If this.head !== null;
-     * -- atraversar la LL hasta el final;
-     * -- crear un nodo con el val
-     * -- este nuevo nodo apunta con el left a current
-     * -- este nuevo nodo apunta con el right a null
-     */
-
-    if(this.head === null) {
-      this.head = new Node(val);
-    }
-
-    const current = this.head;
-    while(current.right !== null) {
-      current = current.right;
-    }
-
-    const node = new Node(val);
-    node.left = current;
-    current.right = node;
-
-    return true;
-  }
 }
+
+
+let tryDLL = new DoubleLinkedList();
+
+// console.log(
+//   tryDLL.insert(0, 1); // [0]
+//   tryDLL.insert(1, 1); // [0, 1]
+//   tryDLL.insert(2, 2); // [0, 1, 2]
+//   tryDLL.insert(3, 3); // [0, 1, 2, 3]
+//   tryDLL.delete(0); // [1, 2, 3]
+//   tryDLL.delete(0); // [2, 3]
+//   tryDLL.insert(1, 4); // [2, 3]
+//   tryDLL.insert(1, 2); // [2, 3]
+//   tryDLL.insert(0, 0); // [0, 2, 3]
+// )

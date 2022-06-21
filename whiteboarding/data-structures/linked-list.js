@@ -11,7 +11,6 @@
 
 class Node {
   constructor(val, next) {
-    super();
     this.val = val;
     this.next = next || null;
   }
@@ -22,7 +21,6 @@ class Node {
  */
 class LinkedList {
   constructor() {
-    super();
     this.head = null;
   }
 
@@ -41,14 +39,14 @@ class LinkedList {
      * Stablish the next node of the prev element to the coming node
      * If there is a next node: access the coming node and set its next to the old one
      */
-    const current = this.head;
+    let current = this.head;
     while(current !== null) {
       /**
        * Regular case: 
        * We access the prev el and insert a new node to the right index;
        */
       if(index === 1) {
-        const node = new Node(val, current.next);
+        let node = new Node(val, current.next);
         current.next = node;
         return true;
       }
@@ -79,7 +77,7 @@ class LinkedList {
       this.head = this.head.next;
     }
     
-    const current = this.head;
+    let current = this.head;
     
     while(current.next !== null) {
       if(index === 1) {
@@ -101,7 +99,7 @@ class LinkedList {
       return false;
     }
     // Base case: When the index is somewhere in between the LL
-    const current = this.head;
+    let current = this.head;
     
     while(current !== null) {
       if(index === 0) {
@@ -123,7 +121,7 @@ class LinkedList {
       return false;
     }
     // Base case: When the value is somewhere in between the LL
-    const current = this.head;
+    let current = this.head;
     
     while(current !== null) {
       if(current.value === value) {
@@ -138,14 +136,14 @@ class LinkedList {
   }
 
   #addToTail(val) {
-    const node = new Node(val);
+    let node = new Node(val);
 
     // Edge cases: this.head === null;
     if(this.head === null) {
       this.head = node;
     }
 
-    const current = this.head;
+    let current = this.head;
     while(current.next !== null) {
       current = current.next;
     }
