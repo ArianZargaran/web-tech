@@ -19,7 +19,7 @@ The JS Engine:
 
     a. Interprets the code on the fly.
 
-    b. Counts with a **profiler** which watches the routine willing to find those chuncks of code that can be optimized.
+    b. Counts with a **profiler** which watches the routine willing to find those chunks of code that can be optimized.
 
     c. Sends to the **compiler** those parts of the code that can be optimized and produces a final and optimized code instead.
 
@@ -46,3 +46,6 @@ Some of the most popular, fastest and common JS Engines are:
 - **Is JavaScript an interpreted language?**
   When JavaScript first came in 1995-96, Brendan Eich created the very first JS-Engine called spider-monkey (Still used in Mozilla Firefox). At this time JavaScript was created keeping Browsers in mind. So that any file coming from the Servers would be quickly **interpreted** and shown by the Browsers.
   Interpreter was a best choice to do so, since Interpreters executes code line by line and shows the results immediately. Things have evolved now and performance is an issue. That's why JSEngines introduced compilers to optimize the code.
+
+[> Go to Index <](../README.md)
+[Next: 2. The Call Stack and Memory Heap >](./the-call-stack-and-memory-heap.md)

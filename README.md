@@ -34,21 +34,20 @@ All you need to know for your next gig.
 3. [The email flow diagram](./web-fundamentals/email-diagram.md)
 4. [Network basics](./web-fundamentals/network-basics.md)
 5. [Network ports](./web-fundamentals/network-ports.md)
+6. [The Web Development Process](./web-fundamentals/the-web-development-process.md)
 
-### The Web Development Process
-
-1. Plan and create a Flow Diagram of the Web App.
-2. Determine your System Requirements & Hosting Solution.
-3. Register a Domain Name.
-4. Setup a Local Testing Server.
-5. Configure a Production Server.
-6. Install and Setup the FTP Service.
-7. Develop the Front-End of the Web Application.
-8. Setup/Config the database with SQL.
-9. Interact with your database with your Back-End.
-10. Upload the website using an FTP Service.
-11. Configure the DNS Records Config, so that the website domain translates into the website IP address.
-12. Configure and Setup the email & SMTP Service to have a custom email address under your domain.
+- 1. Plan and create a Flow Diagram of the Web App.
+- 2. [Determine the Hosting Solution](./web-fundamentals/hosting.md)
+- 3.  Register a Domain Name.
+- 4.  Setup a Local Testing Server.
+- 5.  Configure a Production Server.
+- 6.  Install and Setup the FTP Service.
+- 7.  Develop the Front-End of the Web Application.
+- 8.  Setup/Config the database with SQL.
+- 9. Interact with your database with your Back-End.
+- 10. Upload the website using an FTP Service.
+- 11. Configure the DNS Records Config, so that the website domain translates into the website IP address.
+- 12. Configure and Setup the email & SMTP Service to have a custom email address under your domain.
 
 ## III. Whiteboarding.
 

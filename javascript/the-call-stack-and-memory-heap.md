@@ -6,7 +6,7 @@ The memory heap is where the memory allocation happens. Here the information is 
 
 ### The Call Stack
 
-Is where the engine keeps track of where your code is in execution. It runs in a last-in/first-out kind of order. The JSEngine piles up the different steps (generally jumping line-by-line through the code), it needs to execute in order to complete the whole routine.
+Is where the engine keeps track of where your code is in execution. It runs in a last-in/first-out (LIFO) kind of order. The JSEngine piles up the different steps (generally jumping line-by-line through the code), it needs to execute in order to complete the whole routine.
 
 #### Key concepts around Memory Heap and the Call Stack
 
@@ -29,7 +29,11 @@ The problem comes when we try to determine how this garbage-collection process i
 The algorithm used to perform the garbage collection is called **mark and sweep**. And how dos it work? Well, simple:
 
 - While the code is running, the program creates the variables it needs.
-- This variables point to different objects.
+- These variables point to different objects.
 - As soon as we remove the reference from that object, it should get deleted.
 - Then the object is NOT marked. In other words, since it's not linked, it's not marked.
 - And since it's not marked, it is swept.
+
+[> Go to the Index <](../README.md)
+[< Prev: 1. The ECMAScript Engine](./the-ecmascript-engine.md)
+[Next: 3. Javascript Runtime >](./javascript-runtime.md)
