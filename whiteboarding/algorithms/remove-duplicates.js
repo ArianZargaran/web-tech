@@ -1,10 +1,12 @@
 /**
- * https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/
  * 
  * Description:
  * -- Given a LL
  * -- remove those repeated values
  * -- return LL without duplicates
+ * 
+ * Time: O(n)
+ * Memory: O(n)
  * 
  */
 
