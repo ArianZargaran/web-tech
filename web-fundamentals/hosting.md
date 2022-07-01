@@ -4,8 +4,17 @@ When trying to find the right hosting solution we need to cover at least two nee
 
 - A web can be either:
   -- Locally, in your personal computer
-  -- Shared/dedicated/Virtual Private Hosting
+  ---- Shared
+  +++ The hosting company allocates a certain amount or resource to your website depending on the Subscription plan. Your website would co-live along with other websites within the same server.
+  ---- Dedicated
+  +++ You get to occupy a whole server for your own website.
+  +++ One of the main advantages is that you have full control of the configuration settings on the server.
+  +++ Dedicated Hosting usually comes with administration fees that covers security checks, and any updates your server might need.
+  --- Virtual Private Hosting
+  +++ Similar to the Shared solution, with a significant amount less websites sharing the server.
   -- Cloud Hosting
+  +++ The Cloud takes advantage of "Computer Farms". Collecting the resources of many servers, a sophisticated group
+  +++ It offers incredible flexibility at very low costs. It's 100% scalable and completely in your control. Similar to traditional hosting solutions, Cloud servers are housed in data centers across the globe.
 
 ### Intranet Only
 
