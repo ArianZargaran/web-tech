@@ -1,15 +1,9 @@
 /**
- * 
- * Description:
- * -- Given a LL
- * -- remove those repeated values
- * -- return LL without duplicates
- * 
- * Time: O(n2)
- * Memory: O(1)
+ * Remove the node at a given index STARTING FROM THE END
  */
 
  const removeFromEnd = (head, index) => {
+  // When the LL is empty
   if(head === null) {
     return head;
   }
@@ -17,18 +11,18 @@
   let current = head;
   let length = 0;
 
-  while(current.next !== null) {
+  while(current !== null) {
     length++;
     current = current.next;
   }
 
-  let i = length - index - 1;
+  let i = length - index - 2;
 
-  if(i < 0) {
+  if(i < -1) {
     return head;
   }
 
-  if(i === 0) {
+  if(i === -1) {
     head = head.next;
     return head;
   }
@@ -47,3 +41,9 @@
 
   return head;
 }
+
+/**
+ * Time complexity - O(n)
+ * Space complexity - O(1)
+ */
+
