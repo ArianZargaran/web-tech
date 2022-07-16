@@ -32,4 +32,4 @@ Traditional Web Hosting house servers in Data Centers. Typically with hundreds o
 
 ### Cloud Hosting
 
-Many Developers now gravitate towards Cloud Hosting.
+Many Developers now gravitate towards Cloud Hosting. It offers a ton more flexibility at really low costs. It's 100% scalable and its control is completely on you. The best part of Cloud Hosting is that you can add resources to your server setup on the fly.

@@ -6,7 +6,7 @@ The memory heap is where the memory allocation happens. Here the information is 
 
 ### The Call Stack
 
-Is where the engine keeps track of where your code is in execution. It runs in a last-in/first-out (LIFO) kind of order. The JSEngine piles up the different steps (generally jumping line-by-line through the code), it needs to execute in order to complete the whole routine.
+The CS is where the engine keeps track of where your code is in execution. It runs in a last-in/first-out (LIFO) kind of order. The JSEngine piles up the different steps (generally jumping line-by-line through the code), it needs to execute in order to complete the whole routine.
 
 #### Key concepts around Memory Heap and the Call Stack
 
