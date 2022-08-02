@@ -39,8 +39,8 @@ All you need to know for your next gig.
 - 1. Plan and create a Flow Diagram of the Web App.
 - 2. [Determine the Hosting Solution](./web-fundamentals/hosting.md)
 - 3.  [Register a Domain Name](./web-fundamentals/register-domain-name.md)
-- 4.  Setup a Local Testing Server.
-- 5.  Configure a Production Server.
+- 4.  [Setup a Local Testing Server](./web-fundamentals/setup-local-testing-server.md).
+- 5.  [Configure a Production Server](./web-fundamentals/production-server-setup.md).
 - 6.  Install and Setup the FTP Service.
 - 7.  Develop the Front-End of the Web Application.
 - 8.  Setup/Config the database with SQL.
