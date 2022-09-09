@@ -40,7 +40,6 @@ function Stack() {
     min.next = node;
   }
 
-
   const deleteFromOrder = (val) => {
     let current = this.min;
 
