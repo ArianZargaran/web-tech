@@ -1,5 +1,6 @@
 /**
- * Stack
+ * Stack with some particularities
+ * This stack returns the min value of the stack.
  * 
  * Complexities:
  * Access: O(n)
@@ -69,7 +70,7 @@ class StackWithMin {
   push = (val) => {
     /**
      * Introducimos un nuevo nodo en el this.stack
-     * Comparamos el valor del nodo con el this.min
+     * Comparamos el valor del nodo con el this.minValsStack
      * -- Si this.stack está vacío; simplemente introducimos el nodo en this.minValsStack
      * -- Si this.minValsStack.peek es menor que el valor; introducimos this.minValsStack.peek otra vez en this.minValsStack
      * -- Si this.minValsStack.peek es mayor que el valor; introducimos el valor en this.minValsStack.
@@ -98,4 +99,3 @@ class StackWithMin {
     return this.stack.pop();
   }
 }
-
