@@ -9,6 +9,8 @@ But the code doesn't run in the empty space. Initially the JS Engine creates a g
 
 In a browser, the global execution context is the `window` object, which at the end is also referenced under the `this` keyword (for now). In Node.js the global execution context is the `global` object.
 
+In summary, the Execution context is where the function is called from. If function is called from the upper level, that means that's called from the global execution context. This global execution context is created internally by the JS Engine before even the program is initiated.
+
 ### Lexical Environment
 
 What's the lexical environment? It's the scope of a variable. It's the place where the variable is defined.

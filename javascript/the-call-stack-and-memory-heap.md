@@ -2,7 +2,7 @@
 
 ### The Memory Heap
 
-The memory heap is where the memory allocation happens. Here the information is stored and written. Allocate, use and release memory.
+The memory heap is where the memory allocation happens. Here the information is stored and written. Allocate, use and release memory. (Metaphor: The drawer).
 
 ### The Call Stack
 
@@ -22,7 +22,7 @@ The CS is where the engine keeps track of where your code is in execution. It ru
 
 We are "safe" yes, JS is a Garbage collected language. BUT, what does this exactly mean?
 
-When JS allocates memory and finishes using that piece of code; it will automatically clean it up for us. Only the useful data, remains. This garbage collection process prevents memory leaks.
+When JS allocates memory and finishes using that piece of code; it will automatically clean it up for us. Only the useful data remains. This garbage collection process prevents memory leaks.
 
 The problem comes when we try to determine how this garbage-collection process is done. Also, it gives us a false sense of security over the memory management.
 

@@ -14,6 +14,11 @@ All you need to know for your next gig.
 - [The Callback Queue](./javascript/the-callback-queue.md)
 
 4. [Node](./javascript/node.md)
+5. Enhancement Technologies (TBD)
+
+- [Babel](./javascript/babel.md)
+- [Typescript](./javascript/typescript.md)
+- [Web Assembly](./javascript/web-assembly.md)
 
 ### Javascript Foundation II
 
@@ -21,6 +26,10 @@ All you need to know for your next gig.
 2. [Hoisting](./javascript/hoisting.md)
 
 ## II. Web fundamentals.
+
+## III. JS Good practices
+
+1. Memoization
 
 ### How does the Internet work?
 

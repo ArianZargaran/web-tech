@@ -10,7 +10,7 @@ So, the engine will look for all the variables and functions that are defined in
 
 The hoisting process is performed to make sure we have enough space on our Memory Heap to run the program.
 
-Variables are hoisted to the top of the Global Object and their initial value before their declaration is `undefined `.
+Variables are hoisted to the top of the Global Object and their initial value before their declaration is `undefined`.
 
 ```javascript
 /**
