@@ -12,7 +12,7 @@ The hoisting process is performed to make sure we have enough space on our Memor
 
 Variables are hoisted to the top of the Global Object and their initial value before their declaration is `undefined`.
 
-```javascript
+```js
 /**
  * Hoisted variable at the top
  * var a = undefined;
@@ -24,7 +24,7 @@ var a = 1;
 
 On the contrary, functions are fully hoisted to the top of the Global Object.
 
-```javascript
+```js
 /**
  * Hoisted function at the top
  * function a() {
@@ -44,7 +44,7 @@ During the execution phase of a program, we run our code.
 
 Final and hardest example to master the hoisting process would be:
 
-```javascript
+```js
 var favoriteFood = "grapes";
 
 var foodThoughts = function () {

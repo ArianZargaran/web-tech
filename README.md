@@ -24,12 +24,19 @@ All you need to know for your next gig.
 
 1. [Execution Context & Lexical Environment](./javascript/execution-context.md)
 2. [Hoisting](./javascript/hoisting.md)
+3. [Scopes: var, let and const](./javascript/scopes.md)
+4. [Functions vs Objects](./javascript/functions-vs-objects.md)
+5. [Closures](./javascript/closures.md)
+6. [Prototypal Inheritance](./javascript/prototypal-inheritance.md)
 
-## II. Web fundamentals.
+### JS Good practices
 
-## III. JS Good practices
+1. [Memoization](./javascript/memoization.md)
+2. [How to use the `arguments` keyword](./javascript/arguments.md)
+3. [Call, apply and bind](./javascript/call-apply-bind.md)
+4. [Javascript Types](./javascript/types.md)
 
-1. Memoization
+### II. Web fundamentals.
 
 ### How does the Internet work?
 
