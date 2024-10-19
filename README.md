@@ -28,6 +28,7 @@ All you need to know for your next gig.
 4. [Functions vs Objects](./javascript/functions-vs-objects.md)
 5. [Closures](./javascript/closures.md)
 6. [Prototypal Inheritance](./javascript/prototypal-inheritance.md)
+7. [OOP with Classes](./javascript/oop-with-classes.md)
 
 ### JS Good practices
 
