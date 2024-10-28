@@ -29,6 +29,7 @@ All you need to know for your next gig.
 5. [Closures](./javascript/closures.md)
 6. [Prototypal Inheritance](./javascript/prototypal-inheritance.md)
 7. [OOP with Classes](./javascript/oop-with-classes.md)
+8. [Functional Programming](./javascript/functional-programming.md)
 
 ### JS Good practices
 
