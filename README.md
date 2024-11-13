@@ -14,7 +14,6 @@ All you need to know for your next gig.
 - [The Callback Queue](./javascript/the-callback-queue.md)
 
 4. [Node](./javascript/node.md)
-5. Enhancement Technologies (TBD)
 
 - [Babel](./javascript/babel.md)
 - [Typescript](./javascript/typescript.md)
@@ -30,6 +29,10 @@ All you need to know for your next gig.
 6. [Prototypal Inheritance](./javascript/prototypal-inheritance.md)
 7. [OOP with Classes](./javascript/oop-with-classes.md)
 8. [Functional Programming](./javascript/functional-programming.md)
+
+### Javascript Advanced Concepts
+
+1. [Asynchronous Javascript](./javascript/asynchronous-javascript.md)
 
 ### JS Good practices
 
