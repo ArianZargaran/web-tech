@@ -29,10 +29,8 @@ All you need to know for your next gig.
 6. [Prototypal Inheritance](./javascript/prototypal-inheritance.md)
 7. [OOP with Classes](./javascript/oop-with-classes.md)
 8. [Functional Programming](./javascript/functional-programming.md)
-
-### Javascript Advanced Concepts
-
-1. [Asynchronous Javascript](./javascript/asynchronous-javascript.md)
+9. [Asynchronous Javascript](./javascript/asynchronous-javascript.md)
+10. [JS Modules](./javascript/js-modules.md)
 
 ### JS Good practices
 
