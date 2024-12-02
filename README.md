@@ -38,6 +38,7 @@ All you need to know for your next gig.
 2. [How to use the `arguments` keyword](./javascript/arguments.md)
 3. [Call, apply and bind](./javascript/call-apply-bind.md)
 4. [Javascript Types](./javascript/types.md)
+5. [Error handling](./javascript/error-handling.md)
 
 ### II. Web fundamentals.
 
